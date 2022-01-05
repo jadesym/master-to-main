@@ -9,4 +9,5 @@ Ensure that you have 'gh' installed. It is a necessary dependency for the script
 
 ## Usage: How to migrate local branches after remote branch has been migrated
 ```
+./migrate-local.sh <INSERT_DIRECTORY_OF_LOCAL_REPO_LOCATION>
 ```
