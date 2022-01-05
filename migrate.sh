@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Ensure that gh is installed.
+# This is a necessary dependency in order to execute the migration script!
+gh --version
+
 echo "Migrating repo at local directory location [$1] to use 'main' instead of 'master' as the default branch name"
 
 # Important Variables
