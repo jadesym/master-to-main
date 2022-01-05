@@ -23,6 +23,10 @@ gh repo edit --default-branch $NEW_DEFAULT_BRANCH_NAME
 
 git push origin --delete $PREVIOUS_DEFAULT_BRANCH_NAME
 
+# Check the branch state
+git status
+git branch
+
 # Jump back to the original current directory
-echo "Returning back to the original current directory: $CURRENT_DIRR"
+echo "Returning back to the original current directory: $CURRENT_DIR"
 cd $CURRENT_DIR
