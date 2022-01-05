@@ -2,7 +2,11 @@
 
 Ensure that you have 'gh' installed. It is a necessary dependency for the script to execute properly
 
-# Usage
+## Usage: How to migrate remote branch
 ```
-./migrate.sh <INSERT_DIRECTORY_OF_LOCAL_REPO_LOCATION>
+./migrate-remote.sh <INSERT_DIRECTORY_OF_LOCAL_REPO_LOCATION>
+```
+
+## Usage: How to migrate local branches after remote branch has been migrated
+```
 ```
