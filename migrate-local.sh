@@ -14,19 +14,19 @@ echo "Executing script from current directory: $CURRENT_DIR"
 cd $1
 
 # Switch to the "master" branch:
-$ git checkout $PREVIOUS_DEFAULT_BRANCH_NAME
+git checkout $PREVIOUS_DEFAULT_BRANCH_NAME
 
 # Rename it to "main":
-$ git branch -m $PREVIOUS_DEFAULT_BRANCH_NAME $NEW_DEFAULT_BRANCH_NAME
+git branch -m $PREVIOUS_DEFAULT_BRANCH_NAME $NEW_DEFAULT_BRANCH_NAME
 
 # Get the latest commits (and branches!) from the remote:
-$ git fetch
+git fetch
 
 # Remove the existing tracking connection with "origin/master":
-$ git branch --unset-upstream
+git branch --unset-upstream
 
 # Create a new tracking connection with the new "origin/main" branch:
-$ git branch -u origin/$NEW_DEFAULT_BRANCH_NAME
+git branch -u origin/$NEW_DEFAULT_BRANCH_NAME
 
 # Check the branch state for both local & remote branches
 git status
